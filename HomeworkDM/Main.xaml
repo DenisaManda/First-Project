@@ -1,54 +1,180 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}"
-xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
-xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
-xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
-xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
-xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <TextExpression.NamespacesForImplementation>
-        <sco:Collection x:TypeArguments="x:String">
-            <x:String>System.Activities</x:String>
-            <x:String>System.Activities.Statements</x:String>
-            <x:String>System.Activities.Expressions</x:String>
-            <x:String>System.Activities.Validation</x:String>
-            <x:String>System.Activities.XamlIntegration</x:String>
-            <x:String>Microsoft.VisualBasic</x:String>
-            <x:String>Microsoft.VisualBasic.Activities</x:String>
-            <x:String>System</x:String>
-            <x:String>System.Collections</x:String>
-            <x:String>System.Collections.Generic</x:String>
-            <x:String>System.Data</x:String>
-            <x:String>System.Diagnostics</x:String>
-            <x:String>System.Drawing</x:String>
-            <x:String>System.IO</x:String>
-            <x:String>System.Linq</x:String>
-            <x:String>System.Net.Mail</x:String>
-            <x:String>System.Xml</x:String>
-            <x:String>System.Xml.Linq</x:String>
-            <x:String>UiPath.Core</x:String>
-            <x:String>UiPath.Core.Activities</x:String>
-            <x:String>System.Windows.Markup</x:String>
-        </sco:Collection>
-    </TextExpression.NamespacesForImplementation>
-    <TextExpression.ReferencesForImplementation>
-        <sco:Collection x:TypeArguments="AssemblyReference">
-            <AssemblyReference>System.Activities</AssemblyReference>
-            <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
-            <AssemblyReference>mscorlib</AssemblyReference>
-            <AssemblyReference>System.Data</AssemblyReference>
-            <AssemblyReference>System</AssemblyReference>
-            <AssemblyReference>System.Drawing</AssemblyReference>
-            <AssemblyReference>System.Core</AssemblyReference>
-            <AssemblyReference>System.Xml</AssemblyReference>
-            <AssemblyReference>System.Xml.Linq</AssemblyReference>
-            <AssemblyReference>PresentationFramework</AssemblyReference>
-            <AssemblyReference>WindowsBase</AssemblyReference>
-            <AssemblyReference>PresentationCore</AssemblyReference>
-            <AssemblyReference>System.Xaml</AssemblyReference>
-            <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-            <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-            <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
-        </sco:Collection>
-    </TextExpression.ReferencesForImplementation>
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="864.8,1309.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="56">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="40">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="525.6,1144.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="customersDT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange AddHeaders="True" DataTable="[customersDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="484,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="challenge.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+    </ui:ReadRange>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Rpa'" sap:VirtualizedContainerService.HintSize="484,924" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="dd0452c46f0fb7f6815e33e83563e6fc" Selector="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450.4,776.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:RefreshBrowser Browser="{x:Null}" DisplayName="Refresh Browser" sap:VirtualizedContainerService.HintSize="408.8,22.4" sap2010:WorkflowViewState.IdRef="RefreshBrowser_1" />
+            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="408.8,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ce510d8c-008c-4e5c-b490-d9d16e8da587" InformativeScreenshot="c71c674e4a1d35056c798a49b24b01a5" Selector="&lt;webctrl tag='BUTTON' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[customersDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="408.8,474.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,353.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke FillinCustomer workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="FillinCustomer.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <InArgument x:TypeArguments="x:String" x:Key="phoneNumber">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="currentRow(&quot;Phone Number&quot;).ToString" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="adress">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="currentRow(&quot;Address&quot;).ToString" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="email">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="currentRow(&quot;Email&quot;).ToString" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="lastName">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="currentRow(&quot;Last Name&quot;).ToString" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="firstName">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="currentRow(&quot;first Name&quot;).ToString" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="companyName">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="currentRow(&quot;Company Name&quot;).ToString" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="roleInCompany">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="currentRow(&quot;Role in Company&quot;).ToString" />
+                        </InArgument>
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="82d6219f-19c6-460f-9c34-96b96a7e1712" InformativeScreenshot="dd9f937ccd74f7bfc5099bc664ec3960" Selector="&lt;webctrl tag='INPUT' type='submit' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+  </Sequence>
 </Activity>
